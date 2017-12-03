@@ -85,8 +85,8 @@ config.OpenWebif.epg_encoding = ConfigSelection(default = 'utf-8', choices = [ '
 										'iso-8859-10',
 										'iso-8859-16'])
 
-import responiveext
-responiveext.expandConfig()
+import vtiaddon
+vtiaddon.expandConfig()
 
 imagedistro = getInfo()['imagedistro']
 

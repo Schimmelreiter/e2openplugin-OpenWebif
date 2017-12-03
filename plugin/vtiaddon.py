@@ -1,5 +1,3 @@
-# original file vtiaddon.py
-
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, getConfigListEntry, ConfigSubsection, ConfigInteger, ConfigYesNo, ConfigText, ConfigSelection
 from local import tstrings
@@ -18,7 +16,6 @@ tstrings['install_package'] = _('Install Package')
 tstrings['packages'] = _('Packages')
 tstrings['update'] = _('Update')
 tstrings['installed'] = _('Installed')
-tstrings['all'] = _('All')
 tstrings['more'] = _('More')
 tstrings['update_feed'] = _('Update from Feed')
 tstrings['upgrade_packages'] = _('Upgrade all Packages')

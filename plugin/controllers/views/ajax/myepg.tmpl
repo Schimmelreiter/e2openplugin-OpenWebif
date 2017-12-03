@@ -1,0 +1,26 @@
+#from Plugins.Extensions.OpenWebif.local import tstrings
+<script type="text/javascript" src="../js/vti.js"></script>
+<div id="content_main" class="ui-widget-content">
+	<div id="tvcontentmain">
+		<div id="toolbar-header" class="ui-widget-header">
+			<span id="toolbar">
+				<span id="tvbutton">
+					<form action="" onSubmit="myEPGSearch(); return false;">
+						<div style="width:100%; padding:5px;" class="epgsearch">
+							<input type="radio" id="myepgbtn3" name="tvbutton" checked="checked" /><label for="myepgbtn3">$tstrings['tv']</label>
+							<input type="radio" id="myepgbtn2" name="tvbutton" /><label for="myepgbtn2">$tstrings['radio']</label>
+							<input type="checkbox" id="myepgbtn0" name="epgsearchbutton01" value="off" /><label for="myepgbtn0">$tstrings['epgsearchextended']</label>
+							<input type="checkbox" id="myepgbtn1" name="epgsearchbutton02" /><label for="myepgbtn1">$tstrings['epgsearchbouquetsonly']</label>
+							<input type="text" id="epgSearchTVRadio" size="20" style="height:100%;"/>
+							<button>$tstrings['search']</button>
+						</div>
+					</form>
+				</span>
+			</span>
+		</div>
+		<div id="tvcontent"></div>
+	</div>
+</div>
+<script type="text/javascript">
+\$(function() { CallEPG();});
+</script>

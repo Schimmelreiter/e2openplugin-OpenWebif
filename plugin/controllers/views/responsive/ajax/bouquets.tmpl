@@ -1,0 +1,36 @@
+#from urllib import quote
+#from Plugins.Extensions.OpenWebif.local import tstrings
+
+<div class="form-group hidden-md hidden-lg hidden-xl">
+	<select class="form-control show-tick" id="bqselector">
+	#for $bouquet in $bouquets
+		<option value="ajax/channels?id=$quote($bouquet[0])&stype=$stype">$bouquet[1]</option>
+	#end for
+	</select>
+</div>
+<div class="hidden-sm hidden-xs">
+	<ul class="nav nav-tabs tab-col-green">
+	#for $bouquet in $bouquets
+		<li><a data-toggle="tab" href='#tab' id='firstBq' onclick="load_subcontent('$quote($bouquet[0])&stype=$stype'); return false;" >
+		<i onclick="window.open('web/services.m3u?bRef=$quote($bouquet[0])','_blank');return false;" class="material-icons material-icons-bouquets">tv</i>$bouquet[1]</a></li>
+		<option value="ajax/channels?id=$quote($bouquet[0])&stype=$stype">$bouquet[1]</option>
+	#end for
+	</ul>
+</div>
+<div class="tab-content">
+	<div class="tab-pane active" id="tab">
+		<div id='sub_content_container'></div>
+	</div>
+</div>
+<script type="text/javascript">
+#raw
+var firstBq = document.getElementById("firstBq");
+firstBq.click();
+$.AdminBSB.select.activate();
+$(function () {
+	$('#bqselector').change(function() {
+		load_subcontent($(this).val())
+	});
+});
+#end raw
+</script>

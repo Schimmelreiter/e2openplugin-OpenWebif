@@ -1287,4 +1287,4 @@ class ApiController(WebController):
 	def prePageLoad(self, request):
 		self.isJson = True
 
-from Plugins.Extensions.OpenWebif.responiveext import expand_basecontroller
+from Plugins.Extensions.OpenWebif.vtiaddon import expand_basecontroller

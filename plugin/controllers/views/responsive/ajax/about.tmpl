@@ -1,0 +1,64 @@
+#from Plugins.Extensions.OpenWebif.local import tstrings
+<div class="col-xs-12">
+	<div class="card">
+		<div class="header">
+			<div class="row clearfix">
+				<div class="col-xs-12">
+					<h2><i class="material-icons material-icons-centered">announcement</i>$tstrings['about']</h2>
+				</div>
+			</div>
+		</div>
+		<div class="body">
+			<div class="row clearfix">
+				<div class="col-xs-12 align-center">
+					<h3>OpenWebif</h3>
+					<h2>$tstrings['openwebif_header']</h2>
+					<h1>$tstrings['version']: $info.owiver</h1>
+					<h2>$tstrings['site_source']: <a href='https://github.com/E2OpenPlugins/e2openplugin-OpenWebif'>Github</a></h2>
+					<hr/>
+					<img src="images/about.jpg" alt="about" style="display:none;" id="ajpg">
+					<img src="themes/about.png" alt="about" onerror='\$(this).hide();\$("#ajpg").show();'>
+					<hr/>
+					<br/>
+					<h1>$tstrings['authors']</h1>
+					<div class="info">
+					meo aka bacicciosat<br/>
+					skaman<br/>
+					homey-GER<br/>
+					nobody9<br/>
+					rincewind<br/>
+					jbleyel<br/>
+					SpaceRat aka Schimmelreiter<br/>
+					plnick
+					</div>
+					<h1>$tstrings['contributors']</h1>
+					<div class="info">
+					Army (Graphics)<br/>
+					Milo, Cimarast<br/>
+					HSA ($tstrings['translation_spanish'])<br/>
+					</div>
+					<hr/>
+					<h1>$tstrings['javalib']</h1>
+					<div class="info">
+						<a href='http://jqueryui.com/'>Jquery UI</a>
+					</div>
+					<hr/>
+					<h1>$tstrings['template_engine']</h1>
+					<div class="info">
+						<a href='http://www.cheetahtemplate.org/'>Cheetah</a>
+					</div>
+					<h3>Responsive Design</h3>
+					<div class="info">
+						<a href='https://github.com/gurayyarar/AdminBSBMaterialDesign' target="_blank" >AdminBSB - Material Design</a></br>
+						<a href='https://www.vuplus-support.org' target="_blank" >plnick - VTi</a></br>
+					</div>
+					<hr/>
+					<h1>$tstrings['license']</h1>
+					<code class="info" style="white-space: pre-wrap; margin: 0 100px;">
+					$tstrings['license_text']
+					</code>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
