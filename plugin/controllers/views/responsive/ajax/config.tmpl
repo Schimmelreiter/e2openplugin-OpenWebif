@@ -1,3 +1,6 @@
+#from Plugins.Extensions.OpenWebif.vtiaddon import skinColor
+#from Plugins.Extensions.OpenWebif.local import tstrings
+
 #def select($config)
 <div class="row clearfix">
 	<div class="col-xs-6 align-right">
@@ -29,7 +32,7 @@
 		#else
 			<input type="checkbox" id="$config.path" onclick="saveConfig('$config.path', this.checked);" />
 		#end if
-		<span class='lever switch-col-green'></span></label></div>
+		<span class='lever switch-col-$skinColor'></span></label></div>
 		<label for="$config.path"></label>
 	</div>
 </div>
@@ -50,7 +53,7 @@
 		#end if
 		$choice
 	#end for
-		<span class='lever switch-col-green'></span></label></div>
+		<span class='lever switch-col-$skinColor'></span></label></div>
 		<label for="$config.path"></label>
 	</div>
 </div>
@@ -70,7 +73,7 @@
 #end def
 
 <div id="content_main">
-	<div style="display:none" id="thistitleconfig"><i class='material-icons material-icons-centered'>settings</i>$title</div>
+	<div style="display:none" id="thistitleconfig"><i class='material-icons material-icons-centered'>settings</i>$tstrings['settings']</div>
 	<div class="form-group" id="configuration">
 		#for $config in $configs:
 			#if $config.data.type == "select"

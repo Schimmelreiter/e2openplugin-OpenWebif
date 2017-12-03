@@ -1,6 +1,6 @@
 #from Plugins.Extensions.OpenWebif.local import tstrings
 #from json import dumps
-
+#from Plugins.Extensions.OpenWebif.vtiaddon import skinColor
 <!DOCTYPE html>
 <html lang="en">
 
@@ -441,7 +441,7 @@
 											<td>
 												<div class='switch'>
 													<span class='m-r-10 font-12'></span>
-													<label><input checked type='checkbox' class="remotegrabscreen" id='remotegrabscreen1' name="remotegrabscreen1" ><span class='lever switch-col-green'></span></label>
+													<label><input checked type='checkbox' class="remotegrabscreen" id='remotegrabscreen1' name="remotegrabscreen1" ><span class='lever switch-col-$skinColor'></span></label>
 												</div>
 											</td>
 										</tr>
@@ -546,7 +546,7 @@
 			</aside>
 			<!-- #END# Left Sidebar -->
 			<aside id="rightsidebar" class="right-sidebar">
-				<ul class="nav nav-tabs tab-nav-right tab-col-green" role="tablist">
+				<ul class="nav nav-tabs tab-nav-right tab-col-$skinColor" role="tablist">
 					<li role="presentation" class="active"><a href="#settings" data-toggle="tab">Einstellungen</a></li>
 					<li role="presentation"><a href="#skins" data-toggle="tab">SKINS</a></li>
 				</ul>
@@ -558,13 +558,13 @@
 								<li>
 									<span>Beschreibung einbeziehen</span>
 									<div class="switch">
-										<label><input type="checkbox" id="myepgbtn0"  ><span class="lever switch-col-green vtiwebconfig"></span></label>
+										<label><input type="checkbox" id="myepgbtn0"  ><span class="lever switch-col-$skinColor vtiwebconfig"></span></label>
 									</div>
 								</li>
 								<li>
 									<span>Limitiert auf Favoriten</span>
 									<div class="switch">
-										<label><input type="checkbox" id="myepgbtn1"  ><span class="lever switch-col-green vtiwebconfig"></span></label>
+										<label><input type="checkbox" id="myepgbtn1"  ><span class="lever switch-col-$skinColor vtiwebconfig"></span></label>
 									</div>
 								</li>
 							</ul>
@@ -573,13 +573,13 @@
 								<li>
 									<span>Kurzbeschreibung einbeziehen</span>
 									<div class="switch">
-										<label><input type="checkbox" id="mymoviesearchbtn0"  ><span class="lever switch-col-green vtiwebconfig"></span></label>
+										<label><input type="checkbox" id="mymoviesearchbtn0"  ><span class="lever switch-col-$skinColor vtiwebconfig"></span></label>
 									</div>
 								</li>
 								<li>
 									<span>Langbeschreibung einbeziehen</span>
 									<div class="switch">
-										<label><input type="checkbox" id="mymoviesearchbtn1"  ><span class="lever switch-col-green vtiwebconfig"></span></label>
+										<label><input type="checkbox" id="mymoviesearchbtn1"  ><span class="lever switch-col-$skinColor vtiwebconfig"></span></label>
 									</div>
 								</li>
 							</ul>
@@ -588,25 +588,25 @@
 								<li>
 									<span>Vollständige Fernbedienung</span>
 									<div class="switch">
-										<label><input type="checkbox" id="remotecontrolview" checked ><span class="lever switch-col-green vtiwebconfig"></span></label>
+										<label><input type="checkbox" id="remotecontrolview" checked ><span class="lever switch-col-$skinColor vtiwebconfig"></span></label>
 									</div>
 								</li>
 								<li>
 									<span>Minimale Filmliste</span>
 									<div class="switch">
-										<label><input type="checkbox" id="minmovielist"  ><span class="lever switch-col-green vtiwebconfig"></span></label>
+										<label><input type="checkbox" id="minmovielist"  ><span class="lever switch-col-$skinColor vtiwebconfig"></span></label>
 									</div>
 								</li>
 								<li>
 									<span>Minimale Timer-Liste</span>
 									<div class="switch">
-										<label><input type="checkbox" id="mintimerlist"  ><span class="lever switch-col-green vtiwebconfig"></span></label>
+										<label><input type="checkbox" id="mintimerlist"  ><span class="lever switch-col-$skinColor vtiwebconfig"></span></label>
 									</div>
 								</li>
 								<li>
 									<span>Minimale EPG Liste</span>
 									<div class="switch">
-										<label><input type="checkbox" id="minepglist" checked ><span class="lever switch-col-green vtiwebconfig"></span></label>
+										<label><input type="checkbox" id="minepglist" checked ><span class="lever switch-col-$skinColor vtiwebconfig"></span></label>
 									</div>
 								</li>
 							</ul>
@@ -727,7 +727,7 @@
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="card">
 							<div class="body text-center">
-								<div id="footer"><a class="theme-link-color theme-link-col-green" href="https://github.com/E2OpenPlugins">E2OpenPlugins</a> | <a class="theme-link-color theme-link-col-green" href="http://www.opena.tv">openATV</a> | <a class="theme-link-color theme-link-col-green" href="http://www.vuplus-community.net">Black Hole</a> | <a class="theme-link-color theme-link-col-green" href="http://www.droidsat.org">OpenDroid</a> | <a class="theme-link-color theme-link-col-green" href="http://www.egami-image.com">EGAMI</a> | <a class="theme-link-color theme-link-col-green" href="http://www.hdfreaks.cc">OpenHDF</a> | <a class="theme-link-color theme-link-col-green" href="http://image.openmips.com">openMips</a> | <a class="theme-link-color theme-link-col-green" href="http://openpli.org">OpenPli</a> | <a class="theme-link-color theme-link-col-green" href="http://forum.sifteam.eu">Sif</a> | <a class="theme-link-color theme-link-col-green" href="http://openspa.info">OpenSpa</a> | <a class="theme-link-color theme-link-col-green" href="http://www.world-of-satellite.com">OpenViX</a> | <b><a class="theme-link-color theme-link-col-green" href="http://www.vuplus-support.org">VTi</a></b> | <a class="theme-link-color theme-link-col-green" href="#" onclick="load_maincontent('ajax/about'); return false">Über</a></div>
+								<div id="footer"><a class="theme-link-color theme-link-col-$skinColor" href="https://github.com/E2OpenPlugins">E2OpenPlugins</a> | <a class="theme-link-color theme-link-col-$skinColor" href="http://www.opena.tv">openATV</a> | <a class="theme-link-color theme-link-col-$skinColor" href="http://www.vuplus-community.net">Black Hole</a> | <a class="theme-link-color theme-link-col-$skinColor" href="http://www.droidsat.org">OpenDroid</a> | <a class="theme-link-color theme-link-col-$skinColor" href="http://www.egami-image.com">EGAMI</a> | <a class="theme-link-color theme-link-col-$skinColor" href="http://www.hdfreaks.cc">OpenHDF</a> | <a class="theme-link-color theme-link-col-$skinColor" href="http://image.openmips.com">openMips</a> | <a class="theme-link-color theme-link-col-$skinColor" href="http://openpli.org">OpenPli</a> | <a class="theme-link-color theme-link-col-$skinColor" href="http://forum.sifteam.eu">Sif</a> | <a class="theme-link-color theme-link-col-$skinColor" href="http://openspa.info">OpenSpa</a> | <a class="theme-link-color theme-link-col-$skinColor" href="http://www.world-of-satellite.com">OpenViX</a> | <b><a class="theme-link-color theme-link-col-$skinColor" href="http://www.vuplus-support.org">VTi</a></b> | <a class="theme-link-color theme-link-col-$skinColor" href="#" onclick="load_maincontent('ajax/about'); return false">Über</a></div>
 							</div>
 						</div>
 					</div>
@@ -757,7 +757,7 @@
 <div id="StreamModal" class="modal fade" role="dialog">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
-			<div class="modal-header vti-colored-card bg-green">
+			<div class="modal-header vti-colored-card bg-$skinColor">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
 				<span class="modal-title"><i class="material-icons material-icons-centered">wifi_tethering</i>&nbsp;Streams</span>
 			</div>
@@ -775,7 +775,7 @@
 <div id="RecModal" class="modal fade" role="dialog">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
-			<div class="modal-header vti-colored-card bg-green">
+			<div class="modal-header vti-colored-card bg-$skinColor">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
 				<h4 class="modal-title"><i class="material-icons material-icons-centered">alarm</i><span>Timer</span></h4>
 			</div>
@@ -834,7 +834,7 @@
 				</div>
 			<div class="modal-footer">
 				<button type="button" class="btn waves-effect btn-default" data-dismiss="modal">Schließen</button>
-				<button type="button" class="btn waves-effect responsivebtn bg-green" data-dismiss="modal" onClick="btn_saveTimer(); return false;">Speichern</button>
+				<button type="button" class="btn waves-effect responsivebtn bg-$skinColor" data-dismiss="modal" onClick="btn_saveTimer(); return false;">Speichern</button>
 			</div>
 		</div>
 	</div>
@@ -850,7 +850,7 @@
 				<hr/>
 				<div class="row clearfix">
 					<div class="col-xs-12 align-center">
-						<button type="button" class="btn waves-effect responsivebtn responsivebtnpower bg-green" class="theme-link-color theme-link-col-green" data-dismiss="modal" href="#" onclick="handle_power_state_dialog(new_power_state = 0); return false">
+						<button type="button" class="btn waves-effect responsivebtn responsivebtnpower bg-$skinColor" class="theme-link-color theme-link-col-$skinColor" data-dismiss="modal" href="#" onclick="handle_power_state_dialog(new_power_state = 0); return false">
 							<h4>
 								<i class="material-icons">power_settings_new</i>
 								<span>Standby (ein/aus)</span>
@@ -861,7 +861,7 @@
 				<hr/>
 				<div class="row clearfix">
 					<div class="col-xs-12 align-center">
-						<button type="button" class="btn waves-effect responsivebtn responsivebtnpower bg-green" class="theme-link-color theme-link-col-green" data-dismiss="modal" href="#" onclick="handle_power_state_dialog(new_power_state = 1); return false">
+						<button type="button" class="btn waves-effect responsivebtn responsivebtnpower bg-$skinColor" class="theme-link-color theme-link-col-$skinColor" data-dismiss="modal" href="#" onclick="handle_power_state_dialog(new_power_state = 1); return false">
 							<h4>
 								<i class="material-icons">vertical_align_bottom</i>
 								<span>Ausschalten</span>
@@ -872,7 +872,7 @@
 				<hr/>
 				<div class="row clearfix">
 					<div class="col-xs-12 align-center">
-						<button type="button" class="btn waves-effect responsivebtn responsivebtnpower bg-green" data-dismiss="modal" href="#" onclick="handle_power_state_dialog(new_power_state = 2); return false">
+						<button type="button" class="btn waves-effect responsivebtn responsivebtnpower bg-$skinColor" data-dismiss="modal" href="#" onclick="handle_power_state_dialog(new_power_state = 2); return false">
 							<h4>
 								<i class="material-icons">loop</i>
 								<span>Receiver neustarten</span>
@@ -883,7 +883,7 @@
 				<hr/>
 				<div class="row clearfix">
 					<div class="col-xs-12 align-center">
-						<button type="button" class="btn waves-effect responsivebtn responsivebtnpower bg-green" class="theme-link-color theme-link-col-green" data-dismiss="modal" href="#" onclick="handle_power_state_dialog(new_power_state = 3); return false">
+						<button type="button" class="btn waves-effect responsivebtn responsivebtnpower bg-$skinColor" class="theme-link-color theme-link-col-$skinColor" data-dismiss="modal" href="#" onclick="handle_power_state_dialog(new_power_state = 3); return false">
 							<h4>
 								<i class="material-icons">settings_backup_restore</i>
 								<span>GUI neustarten</span>
@@ -961,7 +961,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default waves-effect" data-dismiss="modal" onClick="closeMessageModal(); return false;">Schließen</button>
-				<button type="button" class="btn waves-effect responsivebtn bg-green"  onClick="sendModalMessage(); return false;">Nachricht&nbsp;senden</button>
+				<button type="button" class="btn waves-effect responsivebtn bg-$skinColor"  onClick="sendModalMessage(); return false;">Nachricht&nbsp;senden</button>
 			</div>
 		</div>
 	</div>

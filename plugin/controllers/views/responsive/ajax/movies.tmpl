@@ -1,6 +1,8 @@
 #from urllib import quote
 #from time import localtime, strftime
 #from Plugins.Extensions.OpenWebif.local import tstrings
+#from Plugins.Extensions.OpenWebif.vtiaddon import skinColor, MinMovieList
+
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 	<div class="card">
 		<div class="header">
@@ -36,7 +38,7 @@
 								<button class="btn btn-default waves-effect" onclick="load_maincontent_spin('ajax/movies?dirname='+escape('/media'));">$dir</button>
 							#end for
 							#if $directory != '/'
-									<button class="btn waves-effect bg-green" id="moviedirbtn"><span style="font-weight: bold;">
+									<button class="btn waves-effect bg-$skinColor" id="moviedirbtn"><span style="font-weight: bold;">
 									#echo $directory[0:-1].split("/")[-1]
 									</button>
 							#end if
@@ -97,7 +99,7 @@
 																</div>
 															#end if
 															<div class="progress progress-striped" style="margin-bottom:0px;width:35%;max-width:200px;min-width:100px;height:10px;">
-																<div class="progress-bar bg-green" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:$size%;"></div>
+																<div class="progress-bar bg-$skinColor" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:$size%;"></div>
 															</div>
 															<span>$movie.length min. / $movie.filesize_readable</span>
 												</div>
