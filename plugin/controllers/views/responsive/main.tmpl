@@ -115,7 +115,11 @@
 								<li class="collapse">
 									<a href='#' title=$tstrings['showfullremote'].replace(" ","&nbsp;") onclick="toggleFullRemote();return false;">Full</a>
 								</li>
+									#if $RemoteControlView == 'checked'
 									<span style="display:None;" id="symbolRemoteView">
+									#else
+									<span id="symbolRemoteView">
+									#end if
 									<li class="align-right" style="margin-top:-30px;">
 										<span data-toggle="collapse" data-target="#rcunumbers" aria-expanded="false" aria-controls="collapseExample" style="cursor:pointer;"><i class="material-icons material-icons-centered">expand_more</i></span>
 									</li>
@@ -425,9 +429,15 @@
 										<span data-toggle="collapse" data-target="#rcuplayerkeys" aria-expanded="false" aria-controls="collapseExample" style="cursor:pointer;"><i class="material-icons material-icons-centered">keyboard_arrow_up</i></span>
 									</li>
 								</span>
+								#if $RemoteControlView == 'checked'
 									<li id="fullRemoteView">
 										<div id="remote_container" style="width:100%; text-align:center;"></div>
 									<li>
+								#else
+									<li id="fullRemoteView" style="display:None;">
+										<div id="remote_container" style="width:100%; text-align:center;"></div>
+									<li>
+								#end if
 								<li>
 									<table class="rcu-table">
 										<tr>
@@ -441,7 +451,7 @@
 											<td>
 												<div class='switch'>
 													<span class='m-r-10 font-12'></span>
-													<label><input checked type='checkbox' class="remotegrabscreen" id='remotegrabscreen1' name="remotegrabscreen1" ><span class='lever switch-col-$skinColor'></span></label>
+													<label><input $ScreenshotOnRCU type='checkbox' class="remotegrabscreen" id='remotegrabscreen1' name="remotegrabscreen1" ><span class='lever switch-col-$skinColor'></span></label>
 												</div>
 											</td>
 										</tr>
@@ -599,7 +609,7 @@
 							<p>$tstrings['common_settings']</p>
 							<ul class="setting-list">
 								<li>
-									<span>$tstrings['showfullremoteshort</span>
+									<span>$tstrings['showfullremoteshort']</span>
 									<div class="switch">
 										<label><input type="checkbox" id="remotecontrolview" $RemoteControlView ><span class="lever switch-col-$skinColor vtiwebconfig"></span></label>
 									</div>
