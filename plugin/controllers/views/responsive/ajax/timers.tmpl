@@ -2,12 +2,13 @@
 #from urllib import quote
 #from time import localtime, strftime
 #from Plugins.Extensions.OpenWebif.local import tstrings
+#from Plugins.Extensions.OpenWebif.vtiaddon import skinColor, MinTimerList
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 	<div class="card">
 		<div class="header">
 			<div class="row clearfix">
 				<div class="col-xs-12 col-sm-6">
-					<h2><i class="material-icons material-icons-centered">alarm</i>$tstrings['timer_list']</h2>
+					<h2><i class="material-icons material-icons-centered">alarm</i>$tstrings['timer']</h2>
 				</div>
 			</div>
 			<ul class="header-dropdown m-r--5">
@@ -34,7 +35,7 @@
 								<div class="header">
 									<div class="row clearfix" style="margin-bottom:-20px;">
 										<div class="col-xs-6">
-											<h2><i class="material-icons material-icons-centered">alarm</i>$timer.servicename - $tname</h2>
+											<h2><i class="material-icons material-icons-centered">alarm</i>$timer.servicename - $timer.name</h2>
 										</div>
 										<div class="col-xs-6">
 											<ul class="header-dropdown m-r--5">
@@ -46,7 +47,6 @@
 												#else
 													title="$tstrings['disable_timer']"><i class="material-icons material-icons-mg-right">alarm_off</i></a></span></li>
 												#end if
-												<i class="material-icons material-icons-mg-right">alarm_off</i></a></span></li>
 												<li><span role="button"><a href="#" onClick="deleteTimer('$sref', '$timer.begin', '$timer.end', '$tname'); lastcontenturl=''; setTimeout(function(){load_maincontent('ajax/timers')}, 200); return false;" title="$tstrings['delete_timer']" ><i class="material-icons material-icons-mg-right">delete</i></a></span></li>
 											</ul>
 										</div>
