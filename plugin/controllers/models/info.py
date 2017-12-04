@@ -191,7 +191,7 @@ def getViewsPath(file = ""):
 	if config.OpenWebif.responsive_enabled.value and os.path.exists(getBasePath() + "/controllers/views/responsive") and not (file.startswith('web/') or file.startswith('/web/')):
 		return getBasePath() + "/controllers/views/responsive/" + file
 	else:
-	return getBasePath() + "/controllers/views/" + file
+		return getBasePath() + "/controllers/views/" + file
 
 def getPiconPath():
 
