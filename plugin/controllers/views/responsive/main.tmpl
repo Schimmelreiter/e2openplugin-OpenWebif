@@ -531,9 +531,9 @@
 							</a>
 							<ul class="ml-menu">
 							
-								#if $webtv
-								<li><a href='#' onclick="load_maincontent('ajax/webtv'); return false;">$tstrings['webtv']</a></li>
-								#end if
+							#if $webtv
+								<li><a href='#' data-close="true" onclick="load_maincontent('ajax/webtv'); return false;">$tstrings['webtv']</a></li>
+							#end if
 
 							#for $extra in $extras
 								#set $target_url = $extra["key"];
