@@ -27,18 +27,16 @@
 			<div id="content_main" >
 				<div id="tvcontentmain">
 
-#if MinTimerList = 'checked'
+#if $MinTimerList == 'checked'
 <div class="row clearfix" id="timers">
 	<div class="col-xs-12">
 #else
 <div id="timers">
 #end if
 #for $timer in $timers
-<div
-<div #if MinTimerList = 'class="row row-striped clearfix pad-top-15"' then 'active' else '' # id="$timer.begin-$timer.end">
+<div #if $MinTimerList == 'checked' then 'class="row row-striped clearfix pad-top-15"' else '' # id="$timer.begin-$timer.end">
 
-
-#if MinTimerList = 'checked'
+#if MinTimerList == 'checked'
 <div class="col-xs-12 col-md-6">
 	<b><i class="material-icons material-icons-centered">alarm</i>$timer.servicename - $timer.name</b>
 	</div>

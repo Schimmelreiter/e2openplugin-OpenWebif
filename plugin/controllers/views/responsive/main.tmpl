@@ -545,7 +545,7 @@
 										<li><a class="lmc pop" href="$target_url">$extra["description"]</a></li>
 										#end if
 									#else
-										<li><a class="lmc" href="$target_url">$extra["description"]</a></li>
+										<li><a href='javascript:void(0);' data-close="true" onclick="load_maincontent('$target_url'); return false;" >$extra["description"]</a></li>
 									#end if
 								#end if
 							#end for
