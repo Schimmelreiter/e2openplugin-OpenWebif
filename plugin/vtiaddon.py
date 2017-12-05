@@ -149,13 +149,13 @@ def setWebConfig(self, request):
 def expand_BaseController():
 	from Plugins.Extensions.OpenWebif.controllers.web import WebController
 	WebController.P_setskincolor = setSkinColor
-	WebController.P_setwebconfig = setWebConfig
+	WebController.P_setvtiwebconfig = setWebConfig
 
 
 expand_basecontroller = expand_BaseController()
 
 def expandConfig():
-	config.OpenWebif.responsive_enabled = ConfigYesNo(default=True)
+	config.OpenWebif.responsive_enabled = ConfigYesNo(default=False)
 	config.OpenWebif.responsive_skinColor = ConfigText(default='indigo')
 	config.OpenWebif.responsive_epgsearch_only_bq = ConfigYesNo(default=True)
 	config.OpenWebif.responsive_epgsearch_full = ConfigYesNo(default=False)

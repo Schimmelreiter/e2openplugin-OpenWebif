@@ -1,19 +1,20 @@
 #from urllib import quote
 #from Plugins.Extensions.OpenWebif.local import tstrings
-
+#from Plugins.Extensions.OpenWebif.vtiaddon import skinColor
 <div class="form-group hidden-md hidden-lg hidden-xl">
 	<select class="form-control show-tick" id="bqselector">
 	#for $bouquet in $bouquets
-		<option value="ajax/channels?id=$quote($bouquet[0])&stype=$stype">$bouquet[1]</option>
+		<option value='ajax/channels?id=$quote($bouquet[0])&stype=$stype'>$bouquet[1]</option>
 	#end for
 	</select>
 </div>
 <div class="hidden-sm hidden-xs">
-	<ul class="nav nav-tabs tab-col-green">
+	<ul class="nav nav-tabs tab-col-$skinColor">
+	#set $f="id='firstBq'"
 	#for $bouquet in $bouquets
-		<li><a data-toggle="tab" href='#tab' id='firstBq' onclick="load_subcontent('$quote($bouquet[0])&stype=$stype'); return false;" >
+		<li><a data-toggle="tab" href='#tab' $f onclick="load_subcontent('ajax/channels?id=$quote($bouquet[0])&stype=$stype'); return false;" >
 		<i onclick="window.open('web/services.m3u?bRef=$quote($bouquet[0])','_blank');return false;" class="material-icons material-icons-bouquets">tv</i>$bouquet[1]</a></li>
-		<option value="ajax/channels?id=$quote($bouquet[0])&stype=$stype">$bouquet[1]</option>
+		#set $f="class='align-middle'"
 	#end for
 	</ul>
 </div>
