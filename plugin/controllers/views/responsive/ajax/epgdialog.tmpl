@@ -25,7 +25,7 @@
 		#set $title = $event.title.replace("'", r"\'")
 		#set $sref=quote($event.sref, safe=' ~@#$&()*!+=:;,.?/\'')
 
-#if MinEPGList == 'checked'
+#if $MinEPGList == 'checked'
 
 <div class="row row-striped clearfix pad-top-15">
 	<div class="col-xs-12 col-md-6">
@@ -34,7 +34,7 @@
 				<img src="$event.picon" title="" class="img-responsive" style="width:80px;margin-top:-10px">
 					</div>
 					<div class="col-xs-9">
-						<span data-toggle="collapse" data-target="#evenid" aria-expanded="false"aria-controls="collapseExample" style="cursor:pointer;">
+						<span data-toggle="collapse" data-target="#evenid$dataid" aria-expanded="false"aria-controls="collapseExample" style="cursor:pointer;">
 						<b>$event.sname</b> - $event.title<i class="material-icons material-icons-centered">expand_more</i>
 						</span>
 					</div>
@@ -106,7 +106,7 @@
 				<span data-toggle="collapse" data-target="#evenid$dataid" aria-expanded="false"aria-controls="collapseExample" style="cursor:pointer;">
 				<b>$event.shortdesc</b>
 				<i class="material-icons material-icons-centered">expand_more</i></span>
-				<div class="collapse" id="eveniddataid">
+				<div class="collapse" id="evenid$dataid">
 				<p>$event.longdesc.replace('\n',r'<br/>').replace('\8a',r'<br/>')</p>
 				</div>
 				#else
